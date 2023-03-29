@@ -126,6 +126,8 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url("../images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
 }
 
 #sign-up-cta {
@@ -195,10 +197,26 @@ header .mobile {
   #sign-up-cta .email {
     display: none;
   }
+  .email span {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
   .email .button {
     margin: 26px 80px 56px 80px;
+    width: 408px;
+    height: 64px;
+    background-color: #4a4a4a;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
   }
 
+  #sign-up-cta {
+    display: none;
+  }
   #sign-up-cta h1 {
     font-size: 3.125rem;
   }
@@ -226,22 +244,24 @@ header .mobile {
 
 #features-section {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  place-content: center space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  margin-right: 38px;
   background-color: white;
 }
 
+.image-container img {
+  width: 100%;
+}
 .feature .image-container {
-  width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin: 32px 32px 40px 32px;
 }
 
 .feature h2 {
@@ -256,6 +276,9 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+}
+.feature .content {
+  height: 187px;
 }
 
 @media only screen and (max-width: 890px) {
