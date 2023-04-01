@@ -24,10 +24,6 @@ html {
   overflow: hidden;
 }
 
-.image-container img {
-  display: block;
-}
-
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
@@ -256,7 +252,7 @@ header .mobile {
   background-color: white;
 }
 
-.image-container img {
+.feature .image-container img {
   width: 100%;
 }
 .feature .image-container {
@@ -272,7 +268,7 @@ header .mobile {
 }
 
 .feature h3 {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
@@ -334,11 +330,20 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#filters-section .images-container .image-container img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
+  }
+  #filters-section .images-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #filters-section .content {
