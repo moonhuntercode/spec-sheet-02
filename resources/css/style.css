@@ -311,20 +311,24 @@ header .mobile {
 
 #filters-section .content {
   padding: 0 0.625rem;
+
   margin-bottom: 5rem;
 }
 
 #filters-section .content h2 {
-  font-size: 2.25rem;
-  font-weight: bold;
   color: white;
+  opacity: 100%;
+  font-size: 36px;
+  margin-top: 64px;
+  font-weight: bold;
 }
 
 #filters-section .content h3 {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.4;
-  font-weight: 300;
+  font-weight: 100;
   color: white;
+  margin-bottom: 80px;
 }
 
 #filters-section .images-container {
