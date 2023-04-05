@@ -1,5 +1,12 @@
-/* Universal Styles */
+/* Univ.ersal Styles */
+@font-face {
+  font-family: "Palatino";
 
+  src: url("../'Palatino'.ttf") format("truetype");
+  font-style: normal;
+
+  font-weight: normal;
+}
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -387,12 +394,13 @@ header .mobile {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
-  font-family: "Palatino", serif;
-  font-size: 1.875rem;
-  line-height: 1.1;
+  font-family: "Palatino";
   font-style: italic;
+  font-size: 30px;
+  line-height: 1.1;
+
   color: #4a4a4a;
 }
 
@@ -421,7 +429,13 @@ header .mobile {
 
 footer {
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
+
+  height: 62px;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 32px;
+
+  justify-content: center;
 }
 
 footer .content {
@@ -432,6 +446,10 @@ footer .content {
 
 footer .copyright {
   flex-grow: 1;
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: normal;
 }
 
 @media only screen and (min-width: 760px) {
